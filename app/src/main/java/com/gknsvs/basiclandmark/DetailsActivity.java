@@ -17,6 +17,7 @@ public class DetailsActivity extends AppCompatActivity {
         binding=ActivityDetailsBinding.inflate(getLayoutInflater());
         View view=binding.getRoot();
         setContentView(view);
-        //
+        ////
+        ///
     }
 }
