@@ -2,12 +2,12 @@ package com.gknsvs.basiclandmark;
 
 import java.io.Serializable;
 
-public class landmark implements Serializable {
+public class Landmark implements Serializable {
     String name;
     String info;
     int image;
 
-    public landmark(String name, String info, int image) {
+    public Landmark(String name, String info, int image) {
         this.name = name;
         this.info = info;
         this.image = image;

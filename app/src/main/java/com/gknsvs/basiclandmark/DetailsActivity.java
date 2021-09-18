@@ -2,6 +2,7 @@ package com.gknsvs.basiclandmark;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -17,5 +18,13 @@ public class DetailsActivity extends AppCompatActivity {
         binding=ActivityDetailsBinding.inflate(getLayoutInflater());
         View view=binding.getRoot();
         setContentView(view);
+
+        Landmark selectedLandmark;
+        Intent intent=getIntent();
+        selectedLandmark= (Landmark) intent.getSerializableExtra("landmark");
+
+        binding.imageView.setImageResource(selectedLandmark.image);
+        binding.txtCountry.setText(selectedLandmark.name);
+        binding.txtInfo.setText(selectedLandmark.info);
     }
 }
